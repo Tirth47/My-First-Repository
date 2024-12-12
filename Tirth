@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <h1>Student Registration</h1>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label for="Firstname">FirstName</label>
+                   
+                </td>
+                <td>
+                    <input type="text" id="Firstname" name="Firstname" placeholder="Enter your First name" size="30" pattern="[A-Z a-z\s]{2,30}" title="Firstname should only contain letters and be between 2 and 30 characters long" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Lastname">LastName</label>
+                   
+                </td>
+                <td>
+                    <input type="text" id="Lastname" name="Lastname" placeholder="Enter your Last name" size="30" pattern="[A-Z a-z\s]{2,30}" title="Lastname should only contain letters and be between 2 and 30 characters long" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Email">Email</label>
+                   
+                </td>
+                <td>
+                    <input type="email" id="Email" name="Email" placeholder="It should  Contain @" size="40" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter a valid email Address Eg:- John@example.com" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Mobile No.">Mobile No.</label>
+                   
+                </td>
+                <td>
+                    <input type="tel" id="Mobile No." name="Mobile No." placeholder="Enter 10 digit mobile no." size="15" pattern="[0-9]{10}" title="Plese Enter Exactly 10 Digits Contact Number" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label >Gender</label>
+                   
+                </td>
+                <td>
+                    <input type="radio" id="Male" name="Gender" Value="Male"  required Checked>
+                    <label for="Male">Male</label>
+                    <input type="radio" id="Female" name="Gender" Value="Female"  required>
+                    <label for="Female">Female</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="DOB">Date of Birth</label>
+                   
+                </td>
+                <td>
+                    <input type="date" id="DOB" name="DOB" min="2000-01-01" max="2007-01-01" placeholder="You Must be atleast 18 years old"   title="You  Must be atlest 18 years old" required>
+                </td>
+            </tr>
+            <tr>
+             <td valign="top" align="left">
+                <label for="Address">Address</label>
+                <td>
+                    <textarea id="Address" name="Address" cols="50" rows="10" minlength="30" maxlength="200" placeholder="Enter your address between 30 to 200 characters"></textarea>
+                </td>
+             </td>   
+            
+            </tr>
+            <tr>
+                <td>
+                    <label for="Qualification">Qualification</label>
+                </td>
+                <td><select id="Qualification" name="Qualification" required>
+                 <option value="">Select Qualification</option>
+                 <option value="highschool">Highschool</option>
+                 <option value="B.Tech">B.Tech</option>
+                 <option value="M.tech">M.tech</option>
+                 <option value="PHD">PHD</option>
+                </select >
+            </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register" >
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
