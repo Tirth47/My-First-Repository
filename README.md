@@ -1,1 +1,1 @@
-fist git repo
+print("first github repo")
